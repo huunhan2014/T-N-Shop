@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Giày dép</title>
+	<link rel="stylesheet" type="text/css" href="../shop.css">
+	<style>
+		#quanao {
+			clear: both;
+			padding-top: 20px;
+		}
+	</style>
+	<script src="../shop.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="logo">
+				<div id="bglogo">
+					<a href="../shop.html"><img src="../img/logo.png" alt=""></a>
+				</div>
+			</div>
+			<div id="content">
+				<p class="name">T&N SHOP</p>
+				<p class="slogan">-PROFESSTIONAL FASHION-</p>
+			</div>
+			<div id="giohang">
+				<a href="../giohang.html"><img src="../img/cart.png" alt="">
+					<p>GIỎ HÀNG</p></a>
+			</div>
+			<div id="search">
+				<form action="../ketqua.html">
+					<input type="text" name="search" placeholder="...">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+			<div id="backtop">
+				<a href="#"><img src="../img/backtop.png" width="50" height="50"></a>
+			</div>
+		</div>
+		<div id="main">
+			<div id="menu">
+				<ul id="navbar">
+					<li><a href="../shop.html">TRANG CHỦ</a></li>
+					<li><a href="../quanao/quanao.html">QUẦN ÁO</a></li>
+					<li><a href="giaydep.html">GIÀY DÉP</a></li>
+					<li><a href="../phukien/phukien.html">PHỤ KIỆN</a></li>
+				</ul>
+			</div>
+			<div class="phannoidung">
+				<div class="tieude">
+					<p>Giày da.</p>
+				</div>
+				<div class="sanpham">
+					<div class="divimg">
+						<a href="da1.html"><img src="da10.jpg"></a>
+					</div>
+					<p class="tensanpham">Giày lười Sanvado</p>
+					<p class="giasanpham">Giá: 400.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+				<div class="sanpham">
+					<div id="logokm">10%</div>
+					<div class="divimg">
+						<a href="da2.html"><img src="da20.jpg"></a>
+					</div>
+					<p class="tensanpham">Giày công sở Sanvado</p>
+					<p class="giasanpham">Giá: 500.000<sup>Đ</sup></p>
+					<p class="giasanpham">Còn lại: 450.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+				<div class="sanpham">
+					<div id="logokm">10%</div>
+					<div class="divimg">
+						<a href="da3.html"><img src="da30.jpg"></a>
+					</div>
+					<p class="tensanpham">Giày Sanvado nâu</p>
+					<p class="giasanpham">Giá: 400.000<sup>Đ</sup></p>
+					<p class="giasanpham">Còn lại: 360.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+				<div class="sanpham">
+					<div class="divimg">
+						<a href="da4.html"><img src="da40.jpg"></a>
+					</div>
+					<p class="tensanpham">Giày công sở Sanvado</p>
+					<p class="giasanpham">Giá: 400.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+			</div>
+
+			<div class="phannoidung">
+				<div class="tieude">
+					<p>Giày sneaker.</p>
+				</div>
+				<div class="sanpham">
+					<div id="logokm">10%</div>
+					<div class="divimg">
+						<a href="sneaker1.html"><img src="sneaker10.jpg"></a>
+					</div>
+					<p class="tensanpham">Giày thể thao nam NA</p>
+					<p class="giasanpham">Giá: 300.000<sup>Đ</sup></p>
+					<p class="giasanpham">Còn lại: 270.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+				<div class="sanpham">
+					<div class="divimg">
+						<a href="sneaker2.html"><img src="sneaker20.jpg"></a>
+					</div>
+					<p class="tensanpham">thể thao nam NA 905</p>
+					<p class="giasanpham">Giá: 330.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+				<div class="sanpham">
+					
+					<div class="divimg">
+						<a href="sneaker3.html"><img src="sneaker30.jpg"></a>
+					</div>
+					<p class="tensanpham">Giày nam NA 896</p>
+					<p class="giasanpham">Giá: 300.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+				<div class="sanpham">
+					<div class="divimg">
+						<a href="sneaker4.html"><img src="sneaker40.jpg"></a>
+					</div>
+					<p class="tensanpham">Giày nam nike</p>
+					<p class="giasanpham">Giá: 360.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+			</div>
+
+			<div class="phannoidung">
+				<div class="tieude">
+					<p>sandal & dép.</p>
+				</div>
+				<div class="sanpham">
+					<div class="divimg">
+						<a href="dep1.html"><img src="dep10.jpg"></a>
+					</div>
+					<p class="tensanpham">Dép ba quai nam</p>
+					<p class="giasanpham">Giá: 220.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+				<div class="sanpham">
+					<div id="logokm">10%</div>
+					<div class="divimg">
+						<a href="dep2.html"><img src="dep20.jpg"></a>
+					</div>
+					<p class="tensanpham">Giày sandal chữ Z</p>
+					<p class="giasanpham">Giá: 230.000<sup>Đ</sup></p>
+					<p class="giasanpham">Còn lại: 205.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+				<div class="sanpham">
+					<div class="divimg">
+						<a href="dep3.html"><img src="dep30.jpg"></a>
+					</div>
+					<p class="tensanpham">sandal 2 quai ngang</p>
+					<p class="giasanpham">Giá: 230.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+				<div class="sanpham">
+					<div class="divimg">
+						<a href="dep4.html"><img src="dep41.jpg"></a>
+					</div>
+					<p class="tensanpham">sandal 2 quai vải</p>
+					<p class="giasanpham">Giá: 230.000<sup>Đ</sup></p>
+					<a href="../thanhtoan1sp.html" class="button"><span>✓</span>Mua ngay</a>
+					<button class="button" onclick="addCart()"><span>+</span>Thêm vào giỏ</button>
+				</div>
+			</div>
+			
+		</div>
+		<div id="footer">
+			<div id="dc" class="bordertop">
+				<p>N&T SHOP</p>
+				<p><small>Shop thời trang nam.</small></p>
+			</div>
+			<div id="lienhe" class="bordertop">
+				<p>LIÊN HỆ</p>
+				Địa chỉ: Số 2, Đường D3, P.25, Q. Bình Thạnh, TP.HCM<br/>
+				Điện Thoại: 08 3899 1373 <br/>	  
+				Email: ut-hcmc@hcmutrans.edu.vn <br /><br />
+			</div>
+			<div id="link" class="bordertop">
+				<p>CÁC LIÊN KẾT CHÍNH</p>
+				<ul>
+					<li><a href="../shop.html">Trang chủ</a></li>
+					<li><a href="../quanao/quanao.html">Quần áo</a></li>
+					<li><a href="giaydep.html">Giày dép</a></li>
+					<li><a href="../phukien/phukien.html">Phụ kiện</a></li>
+				</ul>
+			</div>
+			<div id="mxh" class="bordertop">
+				<a href="#"><img src="../img/facebook.jpg"></a> 
+				<a href="#"><img src="../img/twitter.jpg"></a> 
+				<a href="#"><img src="../img/instagram.jpg"></a> 
+				<a href="#"><img src="../img/google-plus.jpg"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

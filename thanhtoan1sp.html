@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Thanh toán</title>
+	<link rel="stylesheet" type="text/css" href="shop.css">
+	<link rel="stylesheet" href="chitiet.css">
+	<style>
+		#thanhtoan {
+			padding-top: 20px;
+			clear: both;
+			margin: 0 auto;
+		}
+		.bangthanhtoan {
+			width: 80%;
+			border-collapse: collapse;
+			text-align: center;
+			v-align: center;
+			margin: 0 auto;
+		}
+		.bangthanhtoan td,th {
+			border: 1px solid #333;
+		}
+		th, tr:last-child {
+			background-color: #333;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		#thanhtoan img {
+			width: 200px;
+			height: 200px;
+		}
+		.giua {
+			text-align: center;
+			font-size: 25px;
+		}
+		#form {
+			width: 80%;
+			margin: 0 auto;
+		}
+		input[type=text], input[type=email] {
+			width: 100%;
+			padding: 10px 5px;
+    		margin: 5px 0;
+    		box-sizing: border-box;
+    		border: 1px solid #000;
+		}
+		#dathang input[type=submit] {
+			width: 100%;
+			padding: 10px 5px;
+    		margin: 5px 0;
+    		background-color: rgba(192, 57, 43,1.0);
+    		color: #FFF;
+    		font-size: 25px;
+    		text-transform: uppercase;
+    		font-weight: bold;
+		}
+		input[type=submit]:hover {
+			background-color: rgba(231, 76, 60,1.0);
+			color: #fff;
+		}
+		span {
+			color: red;
+		}
+		#dathang {
+			display: none;
+		}
+		button {
+			background-color: rgba(192, 57, 43,1.0);
+			color: #fff;
+			font-weight: bold;
+			font-size: 25px;
+			padding: 5px;
+			margin: 5px;
+			font-family: Georgia;
+		}
+	</style>
+	<script src="shop.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="logo">
+				<div id="bglogo">
+					<a href="shop.html"><img src="img/logo.png" alt=""></a>
+				</div>
+			</div>
+			<div id="content">
+				<p class="name">T&N SHOP</p>
+				<p class="slogan">-PROFESSTIONAL FASHION-</p>
+			</div>
+			<div id="giohang">
+				<a href="thanhtoangh.html"><img src="img/cart.png" alt="">
+					<p>GIỎ HÀNG</p></a>
+			</div>
+			<div id="search">
+				<form action="ketqua.html">
+					<input type="text" name="search" placeholder="...">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+			<div id="backtop">
+				<a href="#"><img src="img/backtop.png" width="50" height="50"></a>
+			</div>
+		</div>
+		<div id="main">
+			<div id="menu">
+				<ul id="navbar">
+					<li><a href="shop.html">TRANG CHỦ</a></li>
+					<li><a href="quanao/quanao.html">QUẦN ÁO</a></li>
+					<li><a href="giaydep/giaydep.html">GIÀY DÉP</a></li>
+					<li><a href="phukien/phukien.html">PHỤ KIỆN</a></li>
+				</ul>
+			</div>
+			<div id="thanhtoan">
+				<div class="tieude">
+					<p>Đơn hàng.</p>
+				</div>
+				<div class="giua">
+					<table class="bangthanhtoan" align="center">
+						<tr>
+							<th>STT</th>
+							<th>Ảnh</th>
+							<th>Tên Sản phẩm</th>
+							<th>Số lượng</th>
+							<th>Thành tiền</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td><img src="quanao/khoac10.jpg"></td>
+							<td>ÁO KHOÁC KAKI BEAN</td>
+							<td><input type="number" value="1" min="1" max="1000"></td>
+							<td>300.000<sup>Đ</sup></td>
+						</tr>
+						<tr>
+							<td colspan="4">Tổng cộng</td>
+							<td>300.000<sup>Đ</sup></td>
+						</tr>
+					</table>
+					<br>
+					<button onclick="show()">ĐẶT HÀNG</button>
+				</div>
+				<br><br>
+				<div id="dathang">
+					<div class="tieude">
+						<p>Thanh toán đơn hàng.</p>
+					</div>
+					<div id="form">
+						<form action="xacnhan.html">
+							<b>Họ tên:</b><span>*</span> <br><input type="text" placeholder="Họ & tên" required>
+							<br><br>
+							<b>Địa chỉ:</b><span>*</span> <br><input type="text" placeholder="Địa chỉ" required>
+							<br><br>
+							<b>Số điện thoại:</b><span>*</span> <br><input type="text" placeholder="Số điện thoại" required>
+							<br><br><b></b>
+							<b>Email:</b> <br><input type="email" placeholder="email">
+							<br><br>
+							<b>Hình thức:<span>*</span></b> <br> <input type="radio" name="select" value="tt" disabled>Thanh toán trả trước
+							<br>
+							<input type="radio" name="select" value="ts">Thanh toán trả sau (<small>hiện tại cửa hàng chỉ có hình thức thanh toán này</small>).
+							<br><br>
+							<p><span>*</span><sub>Vui lòng không được để trống.</sub></p>
+							<input type="submit" value="Xác nhận thanh toán">
+						</form>
+					</div>
+				</div>
+			</div>
+			<br><br><br>
+			<div>
+				<p></p>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="dc" class="bordertop">
+				<p>N&T SHOP</p>
+				<p><small>Shop thời trang nam.</small></p>
+			</div>
+			<div id="lienhe" class="bordertop">
+				<p>LIÊN HỆ</p>
+				Địa chỉ: Số 2, Đường D3, P.25, Q. Bình Thạnh, TP.HCM<br/>
+				Điện Thoại: 08 3899 1373 <br/>	  
+				Email: ut-hcmc@hcmutrans.edu.vn <br /><br />
+			</div>
+			<div id="link" class="bordertop">
+				<p>CÁC LIÊN KẾT CHÍNH</p>
+				<ul>
+					<li><a href="shop.html">Trang chủ</a></li>
+					<li><a href="quanao/quanao.html">Quần áo</a></li>
+					<li><a href="giaydep/giaydep.html">Giày dép</a></li>
+					<li><a href="phukien/phukien.html">Phụ kiện</a></li>
+				</ul>
+			</div>
+			<div id="mxh" class="bordertop">
+				<a href="#"><img src="img/facebook.jpg"></a> 
+				<a href="#"><img src="img/twitter.jpg"></a> 
+				<a href="#"><img src="img/instagram.jpg"></a> 
+				<a href="#"><img src="img/google-plus.jpg"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,366 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body {
+	background-color: rgba(189, 195, 199,0.4);
+}
+
+#header {
+	min-height: 300px;
+	box-shadow: 0 0 10px 0;
+	width: 100%;
+	background-image: url("img/banner.jpg");
+	background-size: 100% 300px;
+	display: inline-block;
+	z-index: 2;
+}
+
+#logo {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	float: left;
+	height: 150px;
+	width: 150px;
+	text-align: center;
+	border: 5px solid #000;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.5);
+}
+
+#bglogo {
+	margin-top: 30px;
+}
+
+#logo a{
+margin-left: 10px;	
+}
+
+#logo img {
+	width: 150px;
+}
+
+#content {
+	margin: 10px auto;
+	text-align: center;
+	height: 160px;
+	width: 40%;
+}
+
+#search {
+	margin: 0 auto;
+	height: 60px;
+	width: 40%;
+}
+
+#search input[type=text] {
+	background-color: rgba(0,0,0,0.7);
+    width: 400px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 14px 20px 14px 20px;
+    transition: width 0.4s ease-in-out;
+    color: #fff;
+}
+#search input[type=submit] {
+	background-color: rgba(0,0,0,0.7);
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 14px 20px 14px 20px;
+	border: 2px solid #fff;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+}
+.name {
+	color: rgba(241, 196, 15,1.0);
+	font-size: 100px;
+	font-weight: bold;
+}
+
+#logokm {
+	position: absolute;
+	background-color: rgba(231, 76, 60,1.0);
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	border: 4px solid red;
+	border-radius: 50%;
+	font-weight: bold;
+}
+.slogan {
+	color: #333333;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#giohang {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 120px;
+	height: 120px;
+	border-radius: 20px;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	font-weight: bold;
+	padding-top: 15px;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+#giohang a{
+	text-decoration: none;
+	color: #fefefe;
+}
+#giohang img{
+	width: 70px;
+	height: 70px;
+}
+#backtop {
+	position: fixed;
+	bottom: 3px;
+	right: 3px;
+	background-color: rgba(0,0,0,0.5);
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+#main {
+	clear: both;
+	width: 80%;
+	margin: 0 auto;
+	min-height: 700px;
+	background-color: #fff;
+	display:table;
+}
+
+#navbar {
+	list-style-type: none;
+}
+
+#navbar li {
+	box-sizing: border-box;
+	float: left;
+	border-right: 1px solid #fff;
+	text-align: center;
+	width: 25%;
+	background-color: rgba(0,0,0,0.9);
+}
+
+#navbar li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 40px;
+	display: block;
+	white-space:pre;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+#navbar li:last-child {
+	border-right: none;
+}
+
+#navbar li a:hover {
+	color: white;
+	background-color: #555;
+	border-right: 3px solid #000;
+	border-left: 3px solid #000;
+}
+
+#footer {
+	clear: both;
+	width: 100%;
+	height: 200px;
+	background-color: #2c3e50;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+}
+.sanpham {
+	width: 25%;
+	min-height: 430px;
+	float: left;
+	border: 4px solid rgba(0,0,0,0);
+	text-align: center;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.sanpham:hover {
+	border: 4px solid rgba(0,0,0,0.7);
+	border-radius: 2px;
+}
+
+.sanpham img {
+	width: 268px;
+	height:268px;
+}
+.divimg {
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+.divimg:hover {
+	margin-left: 10px;
+}
+.tieude {
+	width: 250px;
+}
+.tieude p{
+	background-color: rgba(192, 57, 43,1.0);
+	color: #fff;
+	text-transform: uppercase;
+	margin: 5px 0;
+	text-align: center;
+	border-radius: 0 10px 10px 0;
+}
+input[type=button]{
+	font-family: "Times New Roman", Times, serif;
+	margin: 5px;
+	background-color: rgba(211, 84, 0,1.0);
+	color: #fff;
+	font-size: 20px;
+	border: 1px solid rgba(231, 76, 60, 1);
+}
+input[type=button]:hover {
+	color: #fff;
+	background-color: rgba(41, 128, 185,1.0);
+	border: 1px solid #fff;
+}
+.tensanpham {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.giasanpham {
+	color: #f00;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.button {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	position: relative;
+	background-color: #555;
+	color:rgb(255,255,255);
+	text-decoration: none;
+	border-radius: 5px;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+	box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+	width: 200px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	cursor: pointer;
+}
+.button span {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	width: 50px;
+	background-color: #000;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-right: 1px solid  rgba(0,0,0,0.15);
+}
+.phannoidung {
+	padding-top: 20px;
+	clear: both;
+}
+
+.bordertop {
+	border-top: 5px solid #fff;
+}
+
+#mxh img{
+	float: left;
+	width: 50px;
+}
+#mxh {
+	box-sizing: border-box;
+	height: 170px;
+	width: 17%;
+	float: left;
+	margin: 10px;
+	padding: 5px;
+}
+#dc {
+	box-sizing: border-box;
+	float: left;
+	text-align: left;
+	width: ;
+	height: 195px;
+	font-weight: bold;
+	font-size: 35px;
+	margin: 10px;
+	padding: 5px;
+}
+#lienhe {
+	margin: 10px;
+	padding: 5px;
+	text-align: left;
+	height: 195px;
+	width: 37%;
+	float: left;
+	box-sizing: border-box;
+}
+
+#link {
+	box-sizing: border-box;
+	text-align: left;
+	height: 195px;
+	width: 17%;
+	float: left;
+	text-decoration: none;
+	margin: 10px;
+	padding: 5px;
+}
+#link ul {
+	list-style-type: none;
+}
+#link a {
+	text-decoration: none;
+	color: #fff;
+}
+#chiase {
+	float: right;
+}
+#chiase img {
+	width: 25px;
+}
+#chiase button {
+	font-weight: bold;
+	font-size: 18px;
+	background-color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	padding-top: 3px;
+}
+.blue {
+	border: 2px solid #2a445d;
+	width: 50px;	
+}
+
+.sanphamkhac {
+	margin-top: 20px;
+}
+.sanphamkhac .sanpham {
+	width: 16%;
+	min-height: 200px;
+	margin: 2px;
+}
+
+.sanphamkhac .sanpham img {
+	height: 170px;
+	width: 170px;
+}

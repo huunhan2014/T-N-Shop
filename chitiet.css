@@ -1,0 +1,40 @@
+
+.full {
+	height: 310px;
+	width: 310px;
+}
+.mini {
+	height: 110px;
+	width: 100px;
+	box-sizing: border-box;
+}
+.mini:hover {
+	border: 3px solid rgba(44, 62, 80,1.0);
+}
+td {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	border: none;
+	margin-right: 5px;
+	box-sizing: border-box;
+}
+td:last-child {
+	margin-right: none;
+}
+#thongtin {
+	position: absolute;
+	top: 400px;
+	width: 46%;
+	right: 135px;
+}
+input[type=number], select {
+    margin: 5px 10px;
+    border: 1px solid #BBB;
+    border-color: #BBB;
+    padding: 5px;
+}
+#hinhanh {
+	padding-left: 40px;
+	padding-top: 30px;
+}
